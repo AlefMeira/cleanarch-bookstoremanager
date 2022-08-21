@@ -22,7 +22,7 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 @Builder
 @Entity(name = "book")
-public class BookData {
+public class BookData extends Auditable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -27,7 +27,7 @@ import java.util.List;
 @AllArgsConstructor
 @Entity(name = "users")
 @NoArgsConstructor
-public class UserData {
+public class UserData extends Auditable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
